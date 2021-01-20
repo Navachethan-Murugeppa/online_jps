@@ -121,11 +121,11 @@ $query = "SELECT * FROM employee";
 
 echo '<table border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
-          <td> <font face="Arial">Employee Name</font> </td> 
-          <td> <font face="Arial">Designation</font> </td> 
-          <td> <font face="Arial">Email</font> </td> 
-          <td> <font face="Arial">Company</font> </td>
-			<td> <font face="Arial">Address</font> </td>
+          <th> <font face="Arial">Employee Name</font> </th> 
+          <th> <font face="Arial">Designation</font> </th> 
+          <th> <font face="Arial">Email</font> </th> 
+          <th> <font face="Arial">Company</font> </th>
+			<th> <font face="Arial">Address</font> </th>
       </tr>';
 
 if ($result = $mysqli->query($query)) {

@@ -96,8 +96,7 @@ input[type=submit]:hover {
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">JOB_PORTAL</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    
     
   </div>
 </div>
@@ -122,10 +121,10 @@ $query = "SELECT * FROM company";
 
 echo '<table border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
-          <td> <font face="Arial">Company Name</font> </td> 
-          <td> <font face="Arial">Company Type</font> </td> 
-          <td> <font face="Arial">Email</font> </td> 
-          <td> <font face="Arial">Contact</font> </td> 
+          <th> <font face="Arial">Company Name</font> </th> 
+          <th> <font face="Arial">Company Type</font> </th> 
+          <th> <font face="Arial">Email</font> </th> 
+          <th> <font face="Arial">Contact</font> </th> 
       </tr>';
 
 if ($result = $mysqli->query($query)) {

@@ -98,8 +98,7 @@ input[type=submit]:hover {
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">JOB_PORTAL</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
     
   </div>
 </div>
@@ -124,16 +123,16 @@ $query = "SELECT * FROM candidate";
 
 echo '<table border="0" cellspacing="2" cellpadding="2"> 
       <tr> 
-          <td> <font face="Arial">Candidate Name</font> </td> 
-          <td> <font face="Arial">Birth date</font> </td> 
-          <td> <font face="Arial">Age</font> </td> 
-          <td> <font face="Arial">Gender</font> </td>
-			<td> <font face="Arial">Qualification</font> </td>
-			<td> <font face="Arial">Experience</font> </td>
-			<td> <font face="Arial">Email</font> </td>
-			<td> <font face="Arial">Phone_no</font> </td>
-			<td> <font face="Arial">Skills</font> </td>
-			<td> <font face="Arial">Address</font> </td>		  
+          <th> <font face="Arial">Candidate Name</font> </th> 
+          <th> <font face="Arial">Birth date</font> </th> 
+          <th> <font face="Arial">Age</font> </th> 
+          <th> <font face="Arial">Gender</font> </th>
+			<th> <font face="Arial">Qualification</font> </th>
+			<th> <font face="Arial">Experience</font> </th>
+			<th> <font face="Arial">Email</font> </th>
+			<th> <font face="Arial">Phone_no</font> </th>
+			<th> <font face="Arial">Skills</font> </th>
+			<th> <font face="Arial">Address</font> </th>		  
       </tr>';
 
 if ($result = $mysqli->query($query)) {

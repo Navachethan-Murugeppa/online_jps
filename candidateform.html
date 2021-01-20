@@ -1,13 +1,4 @@
-<?php
-// Initialize the session
-session_start();
- 
-// Check if the user is logged in, if not then redirect him to login page
-if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: login2.php");
-    exit;
-}
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <title>Candidate</title>
@@ -101,12 +92,8 @@ input[type=submit]:hover {
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     <a href="#" class="w3-bar-item w3-button w3-theme-l1">JOB_PORTAL</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-	<a href="jobshow.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Jobs_vacant</a>
-	<a href="interviewshow.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">interview_slot</a>
-	<a href="formshow.php" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Companies</a>
-	<a href="logout.php" class="btn btn-danger">Log out</a>
+    
+	
     
   </div>
 </div>
@@ -122,13 +109,14 @@ input[type=submit]:hover {
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
 		
   <div class="w3-row w3-padding-64">
+  
     <div class="w3-twothird w3-container">
 	<div class="container">
+	
   <form action="candidateinsert.php" method="post">
   <h2>Enter candidate details</h2>
   <div class="row">
@@ -165,7 +153,7 @@ input[type=submit]:hover {
   </div>
   <div class="row">
     <div class="col-25">
-      <label for="lname">University:</label>
+      <label for="lname">Qualification:</label>
     </div>
     <div class="col-75">
       <input type="text" name="university" id="education">
